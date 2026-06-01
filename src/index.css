@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #1e3f20; /* Deep sage forest green */
+  --color-brand-accent: #e07a5f; /* Warm soft terracotta */
+  --color-brand-cream: #fdfaf6; /* Cozy warm cream background */
+  --color-brand-sage: #8fbc94; /* Soft warm green */
+  --color-brand-honey: #f4a261; /* Sweet natural honey orange */
+}
+
+/* Base style resets */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-cream);
+  color: #2c3531;
+}
+
+/* Custom visual utility */
+.glass-panel {
+  background: rgba(253, 250, 246, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(143, 188, 148, 0.2);
+}
+
+.organic-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(30, 63, 32, 0.08);
+}

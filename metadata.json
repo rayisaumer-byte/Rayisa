@@ -1,0 +1,6 @@
+{
+  "name": "Rayiza's Natural Products",
+  "description": "Premium 100% natural, dehydrated baby food designed for infants aged 6 months and above. FSSAI certified, traditional baby health mixes crafted with a mother's care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
