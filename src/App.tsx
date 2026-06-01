@@ -155,19 +155,7 @@ export default function App() {
       {/* Hero Banner Area */}
       <section className="relative pt-6 pb-12 lg:pb-16 id-hero-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-[2rem] border border-brand-sage/20 bg-white shadow-xl shadow-brand-primary/5 lg:min-h-[580px] flex items-center">
-            
-            {/* Premium Full-Width Desktop Background Image */}
-            <div 
-              className="absolute inset-0 bg-no-repeat pointer-events-none hidden lg:block"
-              style={{ 
-                backgroundImage: `url("${heroImgUrl}")`,
-                backgroundPosition: 'right center',
-                backgroundSize: 'cover'
-              }}
-            />
-            {/* Pure white gradient overlay for maximum readability & seamless blending */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 lg:via-white/80 to-transparent lg:w-[65%] pointer-events-none z-0" />
+          <div className="relative overflow-hidden rounded-[2rem] border border-brand-sage/20 bg-white shadow-xl shadow-brand-primary/5 flex items-center">
             
             <div className="relative w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center px-6 py-10 sm:p-12 lg:p-16">
               
@@ -176,13 +164,13 @@ export default function App() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className="lg:col-span-7 z-10 space-y-6"
+                className="lg:col-span-6 xl:col-span-7 z-10 space-y-6"
               >
                 <span className="inline-flex items-center gap-1.5 text-xs text-brand-accent font-bold tracking-widest uppercase bg-brand-accent/5 border border-brand-accent/15 px-3 py-1.5 rounded-full">
                   <Award className="w-3.5 h-3.5 text-brand-accent" /> Premium FSSAI Certified Infant Meal Mixes
                 </span>
                 
-                <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-primary leading-tight">
+                <h2 className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-brand-primary leading-tight">
                   Pure Nutrition, Made with a <span className="text-brand-accent italic font-serif">Mother’s Care</span>.
                 </h2>
                 
@@ -222,8 +210,8 @@ export default function App() {
                 </div>
               </motion.div>
 
-              {/* Right Column (Mobile-only Card Illustration) */}
-              <div className="lg:col-span-5 block lg:hidden w-full relative z-10">
+              {/* Right Column (Hero Image Column - Beautiful side-by-side presentation) */}
+              <div className="lg:col-span-6 xl:col-span-5 block w-full relative z-10">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -232,23 +220,17 @@ export default function App() {
                 >
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] rounded-full bg-brand-sage/10 blur-3xl pointer-events-none" />
                   
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-primary/10 border-4 border-white scale-[1.01]">
+                  <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-primary/10 border-4 border-white scale-[1.01] hover:scale-[1.02] transition-transform duration-300">
                     <img 
                       src={heroImgUrl}
                       alt="Rayiza's Organic Baby Porridge"
                       className="w-full h-auto object-cover"
                       referrerPolicy="no-referrer"
                     />
-                    
-                    <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-xl border border-brand-sage/20 shadow-md">
-                      <p className="text-[11px] text-brand-primary font-bold italic text-center">
-                        &ldquo;A healthy infant starts with traditional meals that sprouted seeds naturally support.&rdquo; – Rayiza, Kasaragod
-                      </p>
-                    </div>
                   </div>
 
-                  {/* Float badge */}
-                  <div className="absolute -top-3 -right-3 bg-yellow-400 text-yellow-950 font-black text-[9px] uppercase px-3 py-2 rounded-xl shadow-md border-2 border-white rotate-12 flex flex-col items-center leading-none">
+                  {/* Elegant Float badge */}
+                  <div className="absolute -top-3 -right-3 bg-yellow-400 text-yellow-950 font-black text-[9px] uppercase px-3 py-2 rounded-xl shadow-md border-2 border-white rotate-12 flex flex-col items-center leading-none z-20">
                     <span>Pure Raw</span>
                     <span className="text-[7px] opacity-80 mt-0.5">Gluten-Free</span>
                   </div>
